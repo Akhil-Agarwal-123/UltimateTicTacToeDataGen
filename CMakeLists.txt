@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.26)
+project(UltimateTicTacToeGameGenerator)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(PlayAgainstRawEvaluation playAgainstRaw.cpp)
+add_executable(EvaluatePositionsFromFile evaluatePositionsFromFile.cpp)
+add_executable(GenerateStartPositions generateStartPositions.cpp)
+add_executable(Other board.cpp evaluator.cpp)

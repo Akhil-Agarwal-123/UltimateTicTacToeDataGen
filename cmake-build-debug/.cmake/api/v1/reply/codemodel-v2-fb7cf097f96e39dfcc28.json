@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UltimateTicTacToeGameGenerator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EvaluatePositionsFromFile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EvaluatePositionsFromFile-Debug-563fdc80d42f5f385555.json",
+					"name" : "EvaluatePositionsFromFile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GenerateStartPositions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GenerateStartPositions-Debug-a522d5f89db523eea6e2.json",
+					"name" : "GenerateStartPositions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Other::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Other-Debug-74a0d546e0c3bc007254.json",
+					"name" : "Other",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PlayAgainstRawEvaluation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PlayAgainstRawEvaluation-Debug-b5c486a1cde32e1c04cc.json",
+					"name" : "PlayAgainstRawEvaluation",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/akhil/Desktop/Coding/UltimateTicTacToeGameGenerator/cmake-build-debug",
+		"source" : "/Users/akhil/Desktop/Coding/UltimateTicTacToeGameGenerator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
