@@ -6,14 +6,14 @@ using namespace std;
 using namespace std::chrono;
 
 int main() {
-    int terminalSpot = 2;
+    int terminalSpot = 5;
     ifstream fin("/Users/akhil/Desktop/Coding/UltimateTicTacToeGameGenerator/cmake-build-debug/startPositions.txt");
     ofstream fout("/Users/akhil/Desktop/Coding/UltimateTicTacToeGameGenerator/cmake-build-debug/positionsWithEvals" + to_string(terminalSpot+1) + ".txt");
     string s; getline(fin, s);
-    // 26152, 29000, 33000, 37000, 41000, 45000
-    int st = 29000 + 4000 * (terminalSpot - 2);
+    // 49000, 60000, 70000, 80000, 90000
+    int st = terminalSpot == 1 ? 49000 : (60000 + 10000 * (terminalSpot - 2));
     for (int i = 0; i < st; i++) getline(fin, s);
-    for (int i = st; i < st + 4000; i++) { // total 230385
+    for (int i = st; i < (terminalSpot == 1 ? 60000 : (st + 10000)); i++) { // total 230385
         Board b(s);
         double val = EvaluatorDFSMiniMax().getTrueEval(b, 200);
         cout << "(" << i+1 << ")\t" << val << endl;

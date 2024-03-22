@@ -226,7 +226,9 @@ public:
     }
 
     void del() {
-        delete x;
-        delete o;
+        for (int i = 0; i < 3; i++) delete x[i];
+        delete [] x;
+        for (int i = 0; i < 3; i++) delete o[i];
+        delete [] o;
     }
 };
